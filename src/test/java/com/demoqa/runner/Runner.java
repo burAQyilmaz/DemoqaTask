@@ -15,8 +15,8 @@ import org.junit.runner.RunWith;
                 "rerun: target/rerun.txt"},
         features = "src/test/resources",
         glue = "com/demoqa/step_definitions",
-        dryRun = true,
-        tags = ""
+        dryRun = false,
+        tags = "@wip"
 
 
 

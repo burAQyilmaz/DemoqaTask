@@ -1,5 +1,6 @@
 package com.demoqa.pages;
 
+import com.demoqa.utility.ConfigurationReader;
 import com.demoqa.utility.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -22,5 +23,15 @@ public class Login_Page extends Base_Page {
 
     @FindBy(id = "newUser")
     public WebElement newUserBtn;
+
+
+    Books_Page booksPage=new Books_Page();
+    public void loginWithValidCredentials(){
+
+        booksPage.loginBtn.click();
+        userNameInput.sendKeys(ConfigurationReader.getProperties("userName"));
+        passwordInput.sendKeys(ConfigurationReader.getProperties("password"));
+        loginBtn.click();
+    }
 
 }
