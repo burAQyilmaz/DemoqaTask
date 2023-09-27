@@ -25,4 +25,5 @@ public class Base_Page {
 
     @FindBy(id = "submit")
     public WebElement logoutBtn;
+
 }

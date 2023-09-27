@@ -17,10 +17,6 @@ import org.junit.runner.RunWith;
         glue = "com/demoqa/step_definitions",
         dryRun = false,
         tags = "@wip"
-
-
-
-
 )
 
 public class Runner {

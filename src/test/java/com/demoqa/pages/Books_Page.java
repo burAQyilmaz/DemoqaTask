@@ -6,7 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Books_Page {
+import java.util.List;
+
+public class Books_Page extends Base_Page{
 
     public Books_Page() {
 
@@ -15,5 +17,9 @@ public class Books_Page {
 
     @FindBy(id = "login")
     public WebElement loginBtn;
+
+    @FindBy(xpath = "//div[@class='rt-tbody']/div/div/div")
+    public List<WebElement> bookTextList;
+
 
 }
